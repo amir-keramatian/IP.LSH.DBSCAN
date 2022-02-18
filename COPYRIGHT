@@ -1,4 +1,4 @@
-LSHDBSCAN: Fusing locality-sensitive hashing into the process of density-based clustering
+IP.LSH.DBSCAN: Integrated Parallel Density-BasedClustering through Locality-Sensitive Hashing
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
