@@ -166,7 +166,10 @@ void* ConcurrentLSHDBSCAN::identifyCoreBuckets_thread(void *inputArg)
 					     true)
 	      )
 	    {
-	      task.table.identifyCoreBuckets_densityStyle();
+		if (metric == euclidean)
+			task.table.identifyCoreBuckets_densityStyle();
+		else
+			task.table.identifyCoreBuckets();
 	    }
 	}
     }  
