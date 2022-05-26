@@ -6,6 +6,8 @@ epsilon=2000;minPts=100;numberOfHashTables=20;numberOfHyperPlanesPerTable=5;file
 
 #epsilon=0.001;minPts=500;numberOfHashTables=20;numberOfHyperPlanesPerTable=2;files=" -f ../../datasets/geolife/geolife_small.txt -b ../../datasets/geolife/geolife_small.idx"
 
+#epsilon=0.2;minPts=100;numberOfHashTables=230;numberOfHyperPlanesPerTable=9;files=" -f ../../datasets/mnist/mnist_data.txt -b ../../datasets/mnist/mnist_idx.txt -a"
+
 for numberOfThreads in 1 2 3 4 5 10 15 20 25 30 35 40 45 50 55 60 65 70
 do    
     params=" -m ${minPts} -e ${epsilon} -t ${numberOfThreads} -M ${numberOfHyperPlanesPerTable} -L ${numberOfHashTables}"
